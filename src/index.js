@@ -1,4 +1,5 @@
 import pageLoad from './page-load'
+import buildSchedule from './schedule'
 
-console.log('hello world');
 pageLoad();
+buildSchedule();
