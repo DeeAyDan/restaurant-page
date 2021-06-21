@@ -7,7 +7,7 @@ function pageLoad(){
     backgroundImage.setAttribute('style','background-image: url("../src/imgs/ramen-stand.gif");background-repeat:no-repeat;height:1350px;width:100vw;position:fixed;background-position: top center;top: -500px;z-index:-1;');
 
     const element = document.querySelector('#content');
-    element.setAttribute('style', 'position:absolute;width:100vw;height:1000px;top:1000px;background-image: url("../src/imgs/background-transition.png");left: 0%;right: 0%;bottom: 0%;');
+    element.setAttribute('style', 'position:absolute;width:100vw;height: max-content;top:1000px;background-image: url("../src/imgs/background-transition.png");left: 0%;right: 0%;bottom: 0%;');
 
     const headLine = document.createElement('h1');
     element.appendChild(headLine);
@@ -35,16 +35,29 @@ function pageLoad(){
     navBar.appendChild(scheduleButton);
     scheduleButton.textContent = 'Schedule';
     scheduleButton.setAttribute('style', 'background: #39658b;height: 5vw;border-width: 10px;border-color: #29445a;font-size: 2.5vw;font-weight: bold;text-shadow: 2px 2px aliceblue;color: #29445a;');
+    scheduleButton.setAttribute('id', 'schedule-button');
     
     const menuButton = document.createElement('button');
     navBar.appendChild(menuButton);
-    menuButton.textContent = 'Menu'
+    menuButton.textContent = 'Menu';
     menuButton.setAttribute('style', 'background: #39658b;height: 5vw;border-width: 10px;border-color: #29445a;font-size: 2.5vw;font-weight: bold;text-shadow: 2px 2px aliceblue;color: #29445a;');
+    menuButton.setAttribute('id', 'menu-button');
 
     const contactsButton = document.createElement('button');
     navBar.appendChild(contactsButton);
-    contactsButton.textContent = 'Contacts'
+    contactsButton.textContent = 'Contacts';
     contactsButton.setAttribute('style', 'background: #39658b;height: 5vw;border-width: 10px;border-color: #29445a;font-size: 2.5vw;font-weight: bold;text-shadow: 2px 2px aliceblue;color: #29445a;');
+    contactsButton.setAttribute('id', 'contacts-button');
+
+    const contentBox = document.createElement('div');
+    element.appendChild(contentBox);
+    contentBox.setAttribute('style', 'position:relative;width:40vw;height:20vw;background:#39658b;left:30vw;border-radius:1vw;top:-10vh;border: solid #29445a;border-width: .5vw;padding-bottom: 2%;display:none;');
+    contentBox.setAttribute('id', 'menu-box');
+
+    const contentBox2 = document.createElement('div');
+    element.appendChild(contentBox2);
+    contentBox2.setAttribute('style', 'position:relative;width:40vw;height:20vw;background:#39658b;left:30vw;border-radius:1vw;top:-10vh;border: solid #29445a;border-width: .5vw;padding-bottom: 2%;display:none;');
+    contentBox2.setAttribute('id', 'contacts-box');
 }
 
 export default pageLoad;
