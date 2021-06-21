@@ -25,7 +25,7 @@ function contactsContent(){
     contentBox.appendChild(githubDiv);
 
     const chefPicture = document.createElement('img');
-    chefPicture.setAttribute('src', '/imgs/chef.png');
+    chefPicture.setAttribute('src', './imgs/chef.png');
     chefPicture.setAttribute('style', 'position: absolute;border-radius: 50%;width: 9vw;margin-left: 5%;border: solid #1b2d3c;border-width: 0.5vw;');
     chefDiv.appendChild(chefPicture);
 
