@@ -25,7 +25,7 @@ function contactsContent(){
     contentBox.appendChild(githubDiv);
 
     const chefPicture = document.createElement('img');
-    chefPicture.setAttribute('src', '../src/imgs/chef.png');
+    chefPicture.setAttribute('src', '../dist/imgs/chef.png');
     chefPicture.setAttribute('style', 'position: absolute;border-radius: 50%;width: 9vw;margin-left: 5%;border: solid #1b2d3c;border-width: 0.5vw;');
     chefDiv.appendChild(chefPicture);
 
@@ -40,7 +40,7 @@ function contactsContent(){
     chefDiv.appendChild(chefPPhone);
 
     const githubPicture = document.createElement('img');
-    githubPicture.setAttribute('src', '../src/imgs/github-logo.png');
+    githubPicture.setAttribute('src', '../dist/imgs/github-logo.png');
     githubPicture.setAttribute('style', 'position: absolute;border-radius: 50%;width: 9vw;margin-bottom: 5%;border: solid #1b2d3c;border-width: 0.5vw;margin-left: 69%;');
     githubDiv.appendChild(githubPicture);
 
@@ -119,7 +119,7 @@ function menuContent(){
     item4.setAttribute('style','width: 100%;height: 25%;display: grid;grid-template-columns: 75% 25%;grid-template-rows: 80% 20%;');
 
     item1.appendChild(item1Picture);
-    item1Picture.setAttribute('src', '../src/imgs/menu-plain.png');
+    item1Picture.setAttribute('src', '../dist/imgs/menu-plain.png');
     item1Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;');
     item1.appendChild(item1Description);
     item1Description.textContent = 'Plain ramen noodles with salt, paper and soy sauce.';
@@ -135,11 +135,11 @@ function menuContent(){
     item2Price.textContent = '199 円';
     item2Price.setAttribute('style', 'margin-top: 0px;text-align:right;font-size: 1vw;');
     item2.appendChild(item2Picture);
-    item2Picture.setAttribute('src', '../src/imgs/menu-onigiri.png');
+    item2Picture.setAttribute('src', '../dist/imgs/menu-onigiri.png');
     item2Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;grid-column-start:2;margin-top: 1vw;');
 
     item3.appendChild(item3Picture);
-    item3Picture.setAttribute('src', '../src/imgs/menu-instant.png');
+    item3Picture.setAttribute('src', '../src/dist/menu-instant.png');
     item3Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;margin-top: 15%;');
     item3.appendChild(item3Description);
     item3Description.textContent = "Bear Paw's special instant cup ramen.";
@@ -155,7 +155,7 @@ function menuContent(){
     item4Price.textContent = '149 円';
     item4Price.setAttribute('style', 'margin-top: 0px;text-align:right;font-size: 1vw;');
     item4.appendChild(item4Picture);
-    item4Picture.setAttribute('src', '../src/imgs/menu-sake.png');
+    item4Picture.setAttribute('src', '../src/dist/menu-sake.png');
     item4Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;grid-column-start:2;margin-top: 1vw;');
 }
 
@@ -188,7 +188,7 @@ function pageLoad(){
 
     const backgroundImage = document.createElement('div');
     body.appendChild(backgroundImage);
-    backgroundImage.setAttribute('style','background-image: url("../src/imgs/ramen-stand.gif");background-repeat:no-repeat;height:1350px;width:100vw;position:fixed;background-position: top center;top: -500px;z-index:-1;');
+    backgroundImage.setAttribute('style','background-image: url("../dist/imgs/ramen-stand.gif");background-repeat:no-repeat;height:1350px;width:100vw;position:fixed;background-position: top center;top: -500px;z-index:-1;');
 
     const element = document.querySelector('#content');
     element.setAttribute('style', 'position:absolute;width:100vw;height: max-content;top:1000px;background-image: url("../src/imgs/background-transition.png");left: 0%;right: 0%;bottom: 0%;');
@@ -208,7 +208,7 @@ function pageLoad(){
 
     const greetingPicture = document.createElement('img');
     greetingArea.appendChild(greetingPicture);
-    greetingPicture.setAttribute('src', '../src/imgs/promotion-image.png');
+    greetingPicture.setAttribute('src', '../dist/imgs/promotion-image.png');
     greetingPicture.setAttribute('style', 'padding-left: 25%;')
 
     const navBar = document.createElement('div');
