@@ -39,7 +39,7 @@ function menuContent(){
     item4.setAttribute('style','width: 100%;height: 25%;display: grid;grid-template-columns: 75% 25%;grid-template-rows: 80% 20%;');
 
     item1.appendChild(item1Picture);
-    item1Picture.setAttribute('src', '../src/imgs/menu-plain.png');
+    item1Picture.setAttribute('src', '../dist/imgs/menu-plain.png');
     item1Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;');
     item1.appendChild(item1Description);
     item1Description.textContent = 'Plain ramen noodles with salt, paper and soy sauce.';
@@ -55,11 +55,11 @@ function menuContent(){
     item2Price.textContent = '199 円';
     item2Price.setAttribute('style', 'margin-top: 0px;text-align:right;font-size: 1vw;');
     item2.appendChild(item2Picture);
-    item2Picture.setAttribute('src', '../src/imgs/menu-onigiri.png');
+    item2Picture.setAttribute('src', '../dist/imgs/menu-onigiri.png');
     item2Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;grid-column-start:2;margin-top: 1vw;');
 
     item3.appendChild(item3Picture);
-    item3Picture.setAttribute('src', '../src/imgs/menu-instant.png');
+    item3Picture.setAttribute('src', '../dist/imgs/menu-instant.png');
     item3Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;margin-top: 15%;');
     item3.appendChild(item3Description);
     item3Description.textContent = "Bear Paw's special instant cup ramen.";
@@ -75,7 +75,7 @@ function menuContent(){
     item4Price.textContent = '149 円';
     item4Price.setAttribute('style', 'margin-top: 0px;text-align:right;font-size: 1vw;');
     item4.appendChild(item4Picture);
-    item4Picture.setAttribute('src', '../src/imgs/menu-sake.png');
+    item4Picture.setAttribute('src', '../dist/imgs/menu-sake.png');
     item4Picture.setAttribute('style', 'grid-row-start: 1;grid-row-end: 3;width: 100%;top: -100%;position: relative;grid-column-start:2;margin-top: 1vw;');
 }
 

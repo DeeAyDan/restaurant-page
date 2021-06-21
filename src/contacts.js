@@ -10,7 +10,7 @@ function contactsContent(){
     contentBox.appendChild(githubDiv);
 
     const chefPicture = document.createElement('img');
-    chefPicture.setAttribute('src', '../src/imgs/chef.png');
+    chefPicture.setAttribute('src', '../dist/imgs/chef.png');
     chefPicture.setAttribute('style', 'position: absolute;border-radius: 50%;width: 9vw;margin-left: 5%;border: solid #1b2d3c;border-width: 0.5vw;');
     chefDiv.appendChild(chefPicture);
 
@@ -25,7 +25,7 @@ function contactsContent(){
     chefDiv.appendChild(chefPPhone);
 
     const githubPicture = document.createElement('img');
-    githubPicture.setAttribute('src', '../src/imgs/github-logo.png');
+    githubPicture.setAttribute('src', '../dist/imgs/github-logo.png');
     githubPicture.setAttribute('style', 'position: absolute;border-radius: 50%;width: 9vw;margin-bottom: 5%;border: solid #1b2d3c;border-width: 0.5vw;margin-left: 69%;');
     githubDiv.appendChild(githubPicture);
 

@@ -4,10 +4,10 @@ function pageLoad(){
 
     const backgroundImage = document.createElement('div');
     body.appendChild(backgroundImage);
-    backgroundImage.setAttribute('style','background-image: url("../src/imgs/ramen-stand.gif");background-repeat:no-repeat;height:1350px;width:100vw;position:fixed;background-position: top center;top: -500px;z-index:-1;');
+    backgroundImage.setAttribute('style','background-image: url("../dist/imgs/ramen-stand.gif");background-repeat:no-repeat;height:1350px;width:100vw;position:fixed;background-position: top center;top: -500px;z-index:-1;');
 
     const element = document.querySelector('#content');
-    element.setAttribute('style', 'position:absolute;width:100vw;height: max-content;top:1000px;background-image: url("../src/imgs/background-transition.png");left: 0%;right: 0%;bottom: 0%;');
+    element.setAttribute('style', 'position:absolute;width:100vw;height: max-content;top:1000px;background-image: url("../dist/imgs/background-transition.png");left: 0%;right: 0%;bottom: 0%;');
 
     const headLine = document.createElement('h1');
     element.appendChild(headLine);
@@ -24,7 +24,7 @@ function pageLoad(){
 
     const greetingPicture = document.createElement('img');
     greetingArea.appendChild(greetingPicture);
-    greetingPicture.setAttribute('src', '../src/imgs/promotion-image.png');
+    greetingPicture.setAttribute('src', '../dist/imgs/promotion-image.png');
     greetingPicture.setAttribute('style', 'padding-left: 25%;')
 
     const navBar = document.createElement('div');
